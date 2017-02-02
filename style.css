@@ -1,0 +1,48 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+  }
+
+  body{
+    background:#EEEEEE;
+    font-family:Monaco;
+  }
+
+  #etsy{
+    margin :20px;
+  }
+
+.top-image{
+  background-image: url(banner.jpg);
+	margin-bottom: 0px;
+	background-size:cover;
+  height: 100px;
+}
+
+h3{
+  text-align: center;
+  padding-top: 45px;
+  font-size: 35px;
+}
+
+.answer{
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.footer{
+  padding: 60px;
+  background:#4B484F;
+  margin-bottom: 0px;
+  font-size: 12px;
+  top: 50px;
+
+}
+
+#name{
+  position: relative;
+  color:white;
+  top: 40px;
+  right: -525px;
+}
