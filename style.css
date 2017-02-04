@@ -6,7 +6,7 @@
 
   body{
     background:#EEEEEE;
-    font-family:Monaco;
+    font-family:robotoslab;
   }
 
   #etsy{
@@ -17,7 +17,7 @@
   background-image: url(banner.jpg);
 	margin-bottom: 0px;
 	background-size:cover;
-  height: 100px;
+  height: 150px;
 }
 
 h3{
@@ -27,16 +27,16 @@ h3{
 }
 
 .answer{
-  text-align: center;
+
   padding-bottom: 90px;
 }
 
 .footer{
-  padding: 60px;
+  padding: 43px;
   background:#4B484F;
   margin-bottom: 0px;
   font-size: 12px;
-  top: 50px;
+  top: 40px;
 
 }
 
