@@ -1,6 +1,7 @@
 var number1 = document.getElementById("answer1");
-number1.innerHTML = numberOne();
+//number1.innerHTML = numberOne();
 // 1. Show me how to calculate the average price of all items.
+numberOne()
 function numberOne(){
   var priceList = [];
   for (i=0; i < items.length; i++){
@@ -12,7 +13,7 @@ function numberOne(){
   averagePrice += priceList[count] / priceList.length
       }
     }
-    return "The average price is $" + averagePrice.toFixed(2);
+    number1.innerHTML += "<p>" + "The average price is $" + averagePrice.toFixed(2) + "</p>"
   }
 
 
@@ -67,14 +68,15 @@ function numberThree(){
 var number4 = document.getElementById("answer4");
 numberFour()
 function numberFour(){
-  var woodList = "";
+  var woodList = [];
   for (i=0; i < items.length; i++){
     for (count=0; count < items[i].materials.length; count++){
       if (items[i].materials[count] === "wood"){
-        woodList += item[i].title;
+        woodList.push(items[i].title);
       }
       }
     }
+    number4.innerHTML += "<p>" + woodList + "</p>"
   }
 
 
@@ -91,8 +93,24 @@ function numberFive(){
       if (items[i].materials.length >= 8){
         var formatting =
         eightMatAnswers.push(items[i].title);
-        eightMatAnswers.push(items[i].quantity);
-        eightMatAnswers.push(items[i].materials);
+        eightMatAnswers.push(items[i].materials.length);
+      for (count=0; count < items[i].materials.length; count++)
+        eightMatAnswers.push(items[i].materials[count]);
       }
+      }
+      number5.innerHTML = "<p>" + eightMatAnswers + "</p>"
+    }
+
+
+// 6. How many items were made by their sellers?
+var number6 = document.getElementById("answer6");
+numberSix()
+function numberSix(){
+  var sellerMade = 0;
+  for (i=0; i < items.length; i++){
+    if (items[i].who_made === "i_did"){
+      sellerMade += 1;
     }
   }
+  number6.innerHTML = "<p>" + sellerMade + " " + "were made by their sellers." + "</p>"
+}
