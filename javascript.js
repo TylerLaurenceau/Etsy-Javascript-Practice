@@ -76,7 +76,7 @@ function numberFour(){
       }
       }
     }
-    number4.innerHTML += "<p>" + woodList + "</p>"
+    number4.innerHTML += "<li>" + woodList[0] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[1] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[2] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[3] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[4] + "</li>"
   }
 
 
