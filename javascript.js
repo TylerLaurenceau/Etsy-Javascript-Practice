@@ -68,15 +68,15 @@ function numberThree(){
 var number4 = document.getElementById("answer4");
 numberFour()
 function numberFour(){
+  var end = " is made of wood."
   var woodList = [];
   for (i=0; i < items.length; i++){
     for (count=0; count < items[i].materials.length; count++){
       if (items[i].materials[count] === "wood"){
-        woodList.push(items[i].title);
+        number4.innerHTML += "<p>" + items[i].title + end + "</p>"
       }
       }
     }
-    number4.innerHTML += "<li>" + woodList[0] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[1] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[2] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[3] + "</li>" + "<p>"+"</p>" + "<li>" + woodList[4] + "</li>"
   }
 
 
@@ -85,20 +85,15 @@ function numberFour(){
 var number5 = document.getElementById("answer5");
 numberFive()
 function numberFive(){
-  var eightMatAnswers = [];
-  var eightMatName= [];
-  var eightMatMaterials= [];
-  var eightMatNumber= [];
+
   for (i=0; i < items.length; i++){
-      if (items[i].materials.length >= 8){
-        var formatting =
-        eightMatAnswers.push(items[i].title);
-        eightMatAnswers.push(items[i].materials.length);
+      if (items[i].materials.length > 8){
+        number5.innerHTML += "<p>" + items[i].title + " " + " " + "has" + " " + items[i].materials.length + " " + "materials." + "</p>"
       for (count=0; count < items[i].materials.length; count++)
-        eightMatAnswers.push(items[i].materials[count]);
+          number5.innerHTML += "<p>" + items[i].materials[count] + "</p>"
+          number5.innerHTML += "<p>"+"</p>"
       }
       }
-      number5.innerHTML = "<p>" + eightMatAnswers + "</p>"
     }
 
 
