@@ -1,5 +1,5 @@
 ##Etsy arrays practice!
- [comedy](http://www.happynetty.com/sites/default/files/styles/full-node-view-image-aspect-switcher/public/didnt-get-arrays.gif?itok=ePVkGqmW)
+ ![comedy](http://www.happynetty.com/sites/default/files/styles/full-node-view-image-aspect-switcher/public/didnt-get-arrays.gif?itok=ePVkGqmW)
 
 *Looking Deeper Into Arrays*
 
